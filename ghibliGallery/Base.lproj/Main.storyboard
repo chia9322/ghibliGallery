@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ADy-d1-P4R">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie View Controller-->
+        <scene sceneID="jf8-U0-Wa0">
+            <objects>
+                <viewController id="yzj-tB-faR" customClass="MovieViewController" customModule="ghibliGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oh5-pY-23g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ghibli-background" translatesAutoresizingMaskIntoConstraints="NO" id="fxV-Zq-Si4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kRN-MC-SMk">
+                                <rect key="frame" x="30" y="390" width="354" height="330"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="g3w-wt-p9h">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ハウルの動く城">
+                                            <fontDescription key="titleFontDescription" name="YuseiMagic-Regular" family="Yusei Magic" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="yzj-tB-faR" eventType="touchUpInside" id="jrD-Es-S9x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnS-V6-U41">
+                                        <rect key="frame" x="0.0" y="68" width="354" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="千と千尋の神隠し">
+                                            <fontDescription key="titleFontDescription" name="YuseiMagic-Regular" family="Yusei Magic" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="yzj-tB-faR" eventType="touchUpInside" id="Thj-6Z-UIf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsr-WK-zV9">
+                                        <rect key="frame" x="0.0" y="136" width="354" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="もののけ姫">
+                                            <fontDescription key="titleFontDescription" name="YuseiMagic-Regular" family="Yusei Magic" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="yzj-tB-faR" eventType="touchUpInside" id="viS-hp-0lE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAd-zf-TT4">
+                                        <rect key="frame" x="0.0" y="204" width="354" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="魔女の宅急便">
+                                            <fontDescription key="titleFontDescription" name="YuseiMagic-Regular" family="Yusei Magic" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="yzj-tB-faR" eventType="touchUpInside" id="Y5v-57-NIH"/>
+                                            <action selector="buttonPressed:" destination="ATD-qh-lBA" eventType="touchUpInside" id="bpH-XB-Euh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5f-1Y-Bho">
+                                        <rect key="frame" x="0.0" y="272" width="354" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="となりのトトロ">
+                                            <fontDescription key="titleFontDescription" name="YuseiMagic-Regular" family="Yusei Magic" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="yzj-tB-faR" eventType="touchUpInside" id="7De-up-WZt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="g" translatesAutoresizingMaskIntoConstraints="NO" id="nb1-de-p2O">
+                                <rect key="frame" x="107" y="140" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nb1-de-p2O" secondAttribute="height" multiplier="1:1" id="bPo-1o-iy3"/>
+                                    <constraint firstAttribute="width" constant="200" id="fFE-VQ-4KS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aQe-ml-Mdy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fxV-Zq-Si4" secondAttribute="bottom" id="2Gg-MF-qhd"/>
+                            <constraint firstItem="aQe-ml-Mdy" firstAttribute="trailing" secondItem="kRN-MC-SMk" secondAttribute="trailing" constant="30" id="JnB-0h-aNP"/>
+                            <constraint firstItem="nb1-de-p2O" firstAttribute="top" secondItem="oh5-pY-23g" secondAttribute="top" constant="140" id="Vlg-CH-CdC"/>
+                            <constraint firstItem="kRN-MC-SMk" firstAttribute="leading" secondItem="aQe-ml-Mdy" secondAttribute="leading" constant="30" id="XHN-PV-gbQ"/>
+                            <constraint firstItem="fxV-Zq-Si4" firstAttribute="top" secondItem="oh5-pY-23g" secondAttribute="top" id="Z39-I2-JJv"/>
+                            <constraint firstItem="fxV-Zq-Si4" firstAttribute="trailing" secondItem="aQe-ml-Mdy" secondAttribute="trailing" id="ZeF-D5-F3x"/>
+                            <constraint firstItem="nb1-de-p2O" firstAttribute="centerX" secondItem="oh5-pY-23g" secondAttribute="centerX" id="ehN-4h-A5A"/>
+                            <constraint firstItem="fxV-Zq-Si4" firstAttribute="leading" secondItem="aQe-ml-Mdy" secondAttribute="leading" id="igL-3H-xC1"/>
+                            <constraint firstItem="kRN-MC-SMk" firstAttribute="top" secondItem="nb1-de-p2O" secondAttribute="bottom" constant="50" id="itC-O0-Lvx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vsz-pE-UAZ"/>
+                    <connections>
+                        <segue destination="ip3-2q-LQL" kind="show" identifier="showGallery" destinationCreationSelector="showGallery:" id="k9w-fJ-0k2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svj-vU-kaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ATD-qh-lBA" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1443.4782608695652" y="-259.15178571428572"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="JGe-r9-mel">
+            <objects>
+                <collectionViewController id="ip3-2q-LQL" customClass="GalleryCollectionViewController" customModule="ghibliGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="L3H-23-bTN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Unj-4z-5Pa">
+                            <size key="itemSize" width="120" height="120"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCollectionViewCell" id="aG7-jt-K8r" customClass="GalleryCollectionViewCell" customModule="ghibliGallery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cnF-5g-4X6">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iw5-DJ-tpm">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iw5-DJ-tpm" firstAttribute="top" secondItem="cnF-5g-4X6" secondAttribute="top" id="bLr-qm-irg"/>
+                                        <constraint firstItem="iw5-DJ-tpm" firstAttribute="leading" secondItem="cnF-5g-4X6" secondAttribute="leading" id="eaV-u3-so2"/>
+                                        <constraint firstAttribute="trailing" secondItem="iw5-DJ-tpm" secondAttribute="trailing" id="ttf-C1-QFO"/>
+                                        <constraint firstAttribute="bottom" secondItem="iw5-DJ-tpm" secondAttribute="bottom" id="zFU-oE-b7s"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="imageView" destination="iw5-DJ-tpm" id="fwM-9j-64M"/>
+                                    <segue destination="D84-ha-ydw" kind="show" identifier="showDetail" destinationCreationSelector="showDetail:" id="yIj-7i-KXt"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ip3-2q-LQL" id="DvG-lR-h2O"/>
+                            <outlet property="delegate" destination="ip3-2q-LQL" id="Qnt-cy-RAg"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Title" id="GZ6-Be-xnY"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4p-Ux-v0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221.739130434783" y="-259.15178571428572"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="iDA-Fx-qlZ">
+            <objects>
+                <viewController id="D84-ha-ydw" customClass="DetailViewController" customModule="ghibliGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X62-bC-b8W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mlZ-j9-WkL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HSC-tY-27R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mlZ-j9-WkL" firstAttribute="leading" secondItem="HSC-tY-27R" secondAttribute="leading" id="8cB-m7-LHS"/>
+                            <constraint firstItem="mlZ-j9-WkL" firstAttribute="top" secondItem="HSC-tY-27R" secondAttribute="top" id="E7Y-CT-OOu"/>
+                            <constraint firstItem="mlZ-j9-WkL" firstAttribute="trailing" secondItem="HSC-tY-27R" secondAttribute="trailing" id="r5a-28-akb"/>
+                            <constraint firstAttribute="bottom" secondItem="mlZ-j9-WkL" secondAttribute="bottom" id="rNQ-X2-PMP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GPA-js-WCY"/>
+                    <connections>
+                        <outlet property="imageView" destination="mlZ-j9-WkL" id="bSm-J7-XWl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3pW-nq-SP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993" y="-259"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dYC-Kc-umY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ADy-d1-P4R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v6W-EL-4Bb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="AccentColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="AccentColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yzj-tB-faR" kind="relationship" relationship="rootViewController" id="Q3C-6c-N07"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kct-dw-RlZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="-259"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="g" width="2000" height="2000"/>
+        <image name="ghibli-background" width="1080" height="1920"/>
+        <namedColor name="AccentColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
